@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Início | O Mundo E Suas Histórias</title>
+
+  <!-- Meta descrição -->
+  <meta name="description" content="Confira as últimas postagens e categorias do O Mundo E Suas Histórias." />
+  <link rel="canonical" href="https://omundoesuashistorias.com.br" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "O Mundo E Suas Histórias",
+    "url": "https://omundoesuashistorias.com.br",
+    "description": "Confira as últimas postagens e categorias do O Mundo E Suas Histórias.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "O Mundo E Suas Histórias",
+      "url": "https://omundoesuashistorias.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://omundoesuashistorias.com.br/logo_omh_fundo_transparente.png"
+      },
+      "sameAs": [
+        "https://facebook.com/omundoesuashistorias",
+        "https://youtube.com/omundoesuashistorias",
+        "https://instagram.com/omundoesuashistorias"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://omundoesuashistorias.com.br/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="O Mundo E Suas Histórias" />
+  <meta property="og:description" content="Confira as últimas postagens e categorias do O Mundo E Suas Histórias." />
+  <meta property="og:url" content="https://omundoesuashistorias.com.br" />
+  <meta property="og:image" content="https://omundoesuashistorias.com.br/thumbnail.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:site_name" content="O Mundo E Suas Histórias" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="O Mundo E Suas Histórias" />
+  <meta name="twitter:description" content="Confira as últimas postagens e categorias do O Mundo E Suas Histórias." />
+  <meta name="twitter:image" content="https://omundoesuashistorias.com.br/thumbnail.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon-omh.ico" type="image/x-icon" />
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#fafafa] text-[#222] font-sans">
+
+  <!-- HEADER -->
+  <header class="bg-[#5a0015] text-white">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      
+      <!-- LOGO -->
+      <a href="/" class="flex items-center gap-3 text-white no-underline">
+        <img src="/logo_omh_fundo_transparente.png" alt="Logo O Mundo E Suas Histórias" class="h-12">
+        <span class="text-xl font-bold">O Mundo E Suas Histórias</span>
+      </a>
+
+      <!-- MENU DESKTOP -->
+      <nav class="hidden md:flex items-center gap-6">
+        <ul class="flex gap-6 list-none">
+          <li><a href="/" class="hover:underline font-semibold">Início</a></li>
+          <li><a href="/sobre.html" class="hover:underline">Sobre</a></li>
+          <li><a href="/contato.html" class="hover:underline">Contato</a></li>
+        </ul>
+        <div class="flex gap-4 ml-4">
+          <a href="https://facebook.com/omundoesuashistorias" target="_blank"><i class="bi bi-facebook text-xl hover:text-yellow-400"></i></a>
+          <a href="https://youtube.com/omundoesuashistorias" target="_blank"><i class="bi bi-youtube text-xl hover:text-yellow-400"></i></a>
+          <a href="https://instagram.com/omundoesuashistorias" target="_blank"><i class="bi bi-instagram text-xl hover:text-yellow-400"></i></a>
+        </div>
+      </nav>
+
+      <!-- BOTÃO MOBILE -->
+      <button id="menuToggle" aria-label="Abrir menu" aria-expanded="false" class="md:hidden text-white focus:outline-none">
+        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+            d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <nav id="mainMenu" class="hidden flex-col bg-[#5a0015] w-full md:hidden">
+      <ul class="flex flex-col list-none">
+        <li><a href="/" class="px-4 py-2 hover:bg-[#7a0020] text-white block">Início</a></li>
+        <li><a href="/sobre.html" class="px-4 py-2 hover:bg-[#7a0020] text-white block">Sobre</a></li>
+        <li><a href="/contato.html" class="px-4 py-2 hover:bg-[#7a0020] text-white block">Contato</a></li>
+      </ul>
+      <div class="flex gap-4 p-4 text-white">
+        <a href="https://facebook.com/omundoesuashistorias" target="_blank">
+          <i class="bi bi-facebook text-xl hover:text-yellow-400"></i>
+        </a>
+        <a href="https://youtube.com/omundoesuashistorias" target="_blank">
+          <i class="bi bi-youtube text-xl hover:text-yellow-400"></i>
+        </a>
+        <a href="https://instagram.com/omundoesuashistorias" target="_blank">
+          <i class="bi bi-instagram text-xl hover:text-yellow-400"></i>
+        </a>
+      </div>
+    </nav>
+
+    <!-- SCRIPT MENU MOBILE -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.getElementById('menuToggle');
+      const menuMobile = document.getElementById('mainMenu');
+
+      if (!menuToggle || !menuMobile) return;
+
+      menuToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        menuMobile.classList.toggle('hidden');
+        // Atualiza aria-expanded
+        menuToggle.setAttribute("aria-expanded", !menuMobile.classList.contains("hidden"));
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!menuMobile.contains(e.target) && !menuToggle.contains(e.target)) {
+          menuMobile.classList.add('hidden');
+          menuToggle.setAttribute("aria-expanded", "false");
+        }
+      });
+    });
+    </script>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="bg-white">
+
+    <!-- HERO FIXO -->
+    <section class="relative w-full overflow-hidden" style="padding-top: 10.42%;">
+      <div class="swiper mySwiper absolute top-0 left-0 w-full h-full">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="carrossel/1.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/2.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/3.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/4.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/5.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/6.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/7.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+          <div class="swiper-slide"><img src="carrossel/8.png" alt="" loading="lazy" class="w-full h-full object-cover" /></div>
+        </div>
+      </div>
+
+      <div class="absolute inset-0 bg-gradient-to-b from-black/50 via-black/30 to-black/50 z-10"></div>
+
+      <div class="absolute inset-0 flex items-center justify-center z-20 px-4">
+        <h1 class="text-white font-extrabold text-center drop-shadow-[0_5px_15px_rgba(0,0,0,0.7)] leading-none"
+            style="font-size: clamp(1.2rem, 5vw, 3rem);">
+          Toda história <span class="text-yellow-400">tem dois lados...</span>
+        </h1>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: { delay: 10000, disableOnInteraction: false },
+        effect: "fade",
+        speed: 1000,
+      });
+    </script>
+
+ <!-- ========== -->
+<!-- ===== Escreva os conteúdos abaixo ===== -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-[#5a0015] text-white py-6">
+    <div class="max-w-6xl mx-auto text-center flex flex-col gap-4">
+      <nav class="flex justify-center gap-6">
+        <a href="/" class="hover:underline">Início</a>
+        <a href="/sobre.html" class="hover:underline">Sobre</a>
+        <a href="/contato.html" class="hover:underline">Contato</a>
+      </nav>
+      <div class="flex justify-center gap-4">
+        <a href="https://facebook.com/omundoesuashistorias" target="_blank"><i class="bi bi-facebook text-xl hover:text-yellow-400"></i></a>
+        <a href="https://youtube.com/omundoesuashistorias" target="_blank"><i class="bi bi-youtube text-xl hover:text-yellow-400"></i></a>
+        <a href="https://instagram.com/omundoesuashistorias" target="_blank"><i class="bi bi-instagram text-xl hover:text-yellow-400"></i></a>
+      </div>
+      <p class="text-sm">&copy; 2025 O Mundo E Suas Histórias. Todos os direitos reservados.</p>
+    </div>
+<!-- Inicia codigo Contador -->
+<div align="center"><a title='Contador de Visitas do MegaContador' href='https://megacontador.com.br/' ><img src='https://megacontador.com.br/img-xtUHCQGny8QTjx01-3.gif' border='0' alt='Contador de visitas'></a></div>
+<!-- Fim do codigo Contador -->
+  </footer>
+
+</body>
+</html>
